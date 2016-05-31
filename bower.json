@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/pabloverapdx/angular-template",
   "ignore": [
     "**/.*",
     "node_modules",
