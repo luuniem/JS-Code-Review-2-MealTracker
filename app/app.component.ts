@@ -1,5 +1,5 @@
 import { Component } from 'angular2/core';
-import { Food } from './meal.models.ts';
+import { Food } from './food.model';
 
 @Component({
   selector: 'my-app',
