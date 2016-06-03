@@ -29,7 +29,6 @@ export class FoodListComponent {
     this.onFoodSelect = new EventEmitter();
   }
   foodClicked(clickedFood: Food): void {
-    console.log('child', clickedFood);
     this.selectedFood = clickedFood;
     this.onFoodSelect.emit(clickedFood)
   }
