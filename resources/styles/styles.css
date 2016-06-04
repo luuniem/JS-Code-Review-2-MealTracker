@@ -1,10 +1,18 @@
+.container {
+  max-width: 100%;
+}
+
 h1 {
   color: blue;
 }
 
 .food-form {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.editLog {
+  padding-top: 10%;
 }
 
 .add-button {

@@ -11,21 +11,7 @@ import { HealthyPipe } from './healthy.pipe';
   outputs: ['onFoodSelect'],
   pipes: [HealthyPipe],
   directives: [FoodComponent, EditFoodDetailsComponent, NewFoodComponent],
-  template: `
-    <select (change)="onChange($event.target.value)">
-      <option value="all" selected="selected">Show All</option>
-      <option value="healthy">Healthy Foods</option>
-      <option value="unhealthy">Unhealthy Foods</option>
-    </select>
-    <food-display *ngFor="#currentFood of foodList | healthy:filterHealthy"
-    (click)="foodClicked(currentFood)"
-    [class.selected]="currentFood === selectedFood"
-    [food]="currentFood">
-    </food-display>
-    <edit-food-details *ngIf="selectedFood" [food]="selectedFood">
-    </edit-food-details>
-    <new-food (onSubmitNewFood)="addFood($event)"></new-food>
-  `
+  templateUrl: './app/food-list.component.html'
 })
 
 export class FoodListComponent {
