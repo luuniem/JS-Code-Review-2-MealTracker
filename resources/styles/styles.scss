@@ -1,9 +1,15 @@
+body {
+  overflow-y: hidden;
+}
+
 .container {
   background-color: #AACD6E;
   border: 2px solid #3C3530;
   margin-top: 5%;
   border-radius: 5px;
   font-family: 'Poiret One', sans-serif;
+  max-height: 100%;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -12,6 +18,11 @@ h1 {
   color: #3C3530;
   text-align: center;
   font-size: 4em;
+}
+
+select {
+  margin-left: 45%;
+  margin-right: 45%;
 }
 
 .food-form {
@@ -33,12 +44,18 @@ h1 {
   padding-bottom: 8px;
 }
 
-.foodDetails {
-  margin-top: 10%;
+/*******List********/
+
+.listUnderline {
+  border: 1px solid #fff;
+  list-style: none;
+  cursor: crosshair;
 }
 
-.mainList {
-  background: rgba(241,107,110,0.40);
-
-  margin-right: 47%;
+div.foodDetails {
+  margin-top: 15%;
+  max-width: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

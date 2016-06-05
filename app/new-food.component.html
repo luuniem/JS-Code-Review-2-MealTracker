@@ -1,7 +1,7 @@
-<div class="food-form">
+<div class="food-form animated flipInX">
   <h3> Add Meal: </h3>
   <input value = "Burger"placeholder ="Name of Meal" class="col-sm-3 input-lg newFoodBox" #newName>
   <input value = "Another item that has lots of calories in it" placeholder ="Log" class="col-sm-3 input-lg newFoodBox" #newLog>
-  <input type="number" value = "600"placeholder ="Calories" class="col-sm-3 input-lg newFoodBox" #newCalories>
+  <input type="number" value = "600"placeholder ="Calories" class="col-sm-3 input-lg newFoodBox" #newCalories required>
   <button (click)="createFood(newName, newLog, newCalories)" class="btn-success btn-lg add-button"> Upload</button>
 </div>

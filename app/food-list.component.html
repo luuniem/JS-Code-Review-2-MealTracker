@@ -1,7 +1,7 @@
-<select (change)="onChange($event.target.value)">
+<select class="dropDown animated bounceInUp"(change)="onChange($event.target.value)">
   <option value="all" selected="selected">Show All</option>
-  <option value="healthy">Healthy Foods</option>
-  <option value="unhealthy">Unhealthy Foods</option>
+  <option value="healthy">The Goodies</option>
+  <option value="unhealthy">The Baddies</option>
 </select>
 <new-food (onSubmitNewFood)="createFood($event)"></new-food>
 <div *ngIf="selectedFood">
