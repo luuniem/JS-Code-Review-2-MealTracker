@@ -1,7 +1,7 @@
 ////////////////////// DEPENDENCIES AND VARIABLES //////////////////////
 
 var gulp = require('gulp');
-
+var browserify = require('browserify');
 // used for concatenating/minifying bower files and other js/css
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -123,6 +123,11 @@ gulp.task('build', ['ts'], function(){
   // we can use the buildProduction environment variable here later.
   gulp.start('bower');
   gulp.start('sassBuild');
+});
+gulp.task('minifyScripts', ['jsBrowserify'], function(){
+  return gulp.src('./build/js/app.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'))
 });
 
 ////////////////////// SETUP NOTES //////////////////////
