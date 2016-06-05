@@ -1,14 +1,12 @@
 import { Component, EventEmitter } from 'angular2/core';
+import { EditFoodDetailsComponent } from './edit-food-details.component';
 import { Food } from './food.model';
 
 @Component ({
   selector: 'food-display',
   inputs: ['food'],
-  template: `
-    <h3> {{ food.name }} </h3>
-    <h4> {{ food.log }} </h4>
-    <h4> {{ food.calories }} </h4>
-  `
+  directives: [EditFoodDetailsComponent],
+  templateUrl: './app/food.component.html'
 })
 
 export class FoodComponent {

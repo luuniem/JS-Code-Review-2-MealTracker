@@ -1,0 +1,44 @@
+.container {
+  background-color: #AACD6E;
+  border: 2px solid #3C3530;
+  margin-top: 5%;
+  border-radius: 5px;
+  font-family: 'Poiret One', sans-serif;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  color: #3C3530;
+  text-align: center;
+  font-size: 4em;
+}
+
+.food-form {
+  background: rgba(255,255,255,0.80);
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  input {
+    margin-left: 2%;
+  }
+}
+
+
+.add-button {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.foodDetails {
+  margin-top: 10%;
+}
+
+.mainList {
+  background: rgba(241,107,110,0.40);
+
+  margin-right: 47%;
+}

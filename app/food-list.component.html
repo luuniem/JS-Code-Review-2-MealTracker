@@ -3,14 +3,16 @@
   <option value="healthy">Healthy Foods</option>
   <option value="unhealthy">Unhealthy Foods</option>
 </select>
+<new-food (onSubmitNewFood)="createFood($event)"></new-food>
+<div *ngIf="selectedFood">
+  <edit-food-details [food]="selectedFood"> </edit-food-details>
+</div>
 
-<food-display *ngFor="#currentFood of foodList | healthy:filterHealthy"
-(click)="foodClicked(currentFood)"
-[class.selected]="currentFood === selectedFood"
-[food]="currentFood">
+
+<div class="foodDetails">
+  <food-display *ngFor="#currentFood of foodList | healthy:filterHealthy"
+  (click)="foodClicked(currentFood)"
+  [class.selected]="currentFood === selectedFood"
+  [food]="currentFood">
 </food-display>
-
-<edit-food-details *ngIf="selectedFood" [food]="selectedFood">
-</edit-food-details>
-
-<new-food (onSubmitNewFood)="addFood($event)"></new-food>
+</div>

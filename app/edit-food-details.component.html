@@ -1,7 +1,6 @@
-<div class="food-form">
+<div class="editFoodDetails">
   <h3 class="editLog"> Edit Your Log: </h3>
-  <input [(ngModel)]="food.name" class = "col-sm-4 input-lg food-form">
-  <input [(ngModel)]="food.log" class = "col-sm-4 input-lg food-form">
-  <input [(ngModel)]="food.calories" class = "col-sm-4 input-lg food-form">
-
+  <input placeholder="Name"[(ngModel)]="food.name" class = "col-sm-2 input-lg food-form addFoodBox">
+  <input placeholder="Details"[(ngModel)]="food.log" class = "col-sm-8 input-lg food-form addFoodBox">
+  <input placeholder="Calories"[(ngModel)]="food.calories" class = "col-sm-2 input-lg food-form addFoodBox"type = "number" >
 </div>

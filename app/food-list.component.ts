@@ -26,10 +26,8 @@ export class FoodListComponent {
     this.selectedFood = clickedFood;
     this.onFoodSelect.emit(clickedFood)
   }
-  addFood(name: string, log: string, calories: number): void {
-    this.foodList.push(
-      new Food(name, log, calories, this.foodList.length)
-    );
+  createFood(newFood: Food): void{
+    this.foodList.push(newFood);
   }
   onChange(filterOption){
     this.filterHealthy = filterOption;
