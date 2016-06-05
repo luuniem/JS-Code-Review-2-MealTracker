@@ -6,7 +6,7 @@
 
 ## Description
 
-Meal Traks is a web app that allows users to keep track of their diets. Users can add as well as edit the name of their meals, description of the meal, and the amount of calories intake. This app has the options to filter and show foods that were logged either above or below 500 calories.
+Meal Traks is a web app that allows users to keep track of their diets. Users can add as well as edit the name of their meals, description of the meal, and the amount of calories intake. This app has the options to filter and show foods that were logged either above or below 500 calories. [Check it Out!](http://luuniem.github.io/JS-Code-Review-2-MealTracker/index.html)
 
 ## Setup/Installation Requirements
 
